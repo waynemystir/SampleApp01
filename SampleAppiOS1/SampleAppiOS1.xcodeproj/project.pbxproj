@@ -14,7 +14,6 @@
 		B0D8D8901A2FC20F0076B921 /* SampleAppiOS1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D8D88F1A2FC20F0076B921 /* SampleAppiOS1Tests.m */; };
 		B0D8D89A1A2FC90C0076B921 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0D8D8991A2FC90C0076B921 /* View.xib */; };
 		B0D8D89D1A30049E0076B921 /* TimeZonesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D8D89C1A30049E0076B921 /* TimeZonesViewController.m */; };
-		B0D8D8A01A316D2B0076B921 /* TimeZonePopOverController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D8D89F1A316D2B0076B921 /* TimeZonePopOverController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +41,6 @@
 		B0D8D8991A2FC90C0076B921 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		B0D8D89B1A30049E0076B921 /* TimeZonesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeZonesViewController.h; sourceTree = "<group>"; };
 		B0D8D89C1A30049E0076B921 /* TimeZonesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeZonesViewController.m; sourceTree = "<group>"; };
-		B0D8D89E1A316D2B0076B921 /* TimeZonePopOverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeZonePopOverController.h; sourceTree = "<group>"; };
-		B0D8D89F1A316D2B0076B921 /* TimeZonePopOverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeZonePopOverController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +89,6 @@
 				B0D8D8991A2FC90C0076B921 /* View.xib */,
 				B0D8D89B1A30049E0076B921 /* TimeZonesViewController.h */,
 				B0D8D89C1A30049E0076B921 /* TimeZonesViewController.m */,
-				B0D8D89E1A316D2B0076B921 /* TimeZonePopOverController.h */,
-				B0D8D89F1A316D2B0076B921 /* TimeZonePopOverController.m */,
 				B0D8D8801A2FC20F0076B921 /* Images.xcassets */,
 				B0D8D8731A2FC20F0076B921 /* Supporting Files */,
 			);
@@ -225,7 +220,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0D8D8A01A316D2B0076B921 /* TimeZonePopOverController.m in Sources */,
 				B0D8D87C1A2FC20F0076B921 /* ViewController.m in Sources */,
 				B0D8D89D1A30049E0076B921 /* TimeZonesViewController.m in Sources */,
 				B0D8D8791A2FC20F0076B921 /* AppDelegate.m in Sources */,
@@ -407,6 +401,7 @@
 				B0D8D8951A2FC20F0076B921 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0D8D8961A2FC20F0076B921 /* Build configuration list for PBXNativeTarget "SampleAppiOS1Tests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +410,7 @@
 				B0D8D8981A2FC20F0076B921 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
