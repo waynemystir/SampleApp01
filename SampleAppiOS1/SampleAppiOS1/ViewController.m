@@ -56,6 +56,7 @@
 
 - (void)setTheTimeZone:(NSTimeZone *)timezone {
     theTimeZone = timezone;
+    [self updateTimerLabel];
     _timeZoneLabel.text = timezone.name;
 }
 
@@ -65,7 +66,7 @@
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         poc = [[UIPopoverController alloc] initWithContentViewController:tzvc];
-        poc.popoverContentSize = CGSizeMake(300, self.view.frame.size.height);
+        poc.popoverContentSize = CGSizeMake(350, self.view.frame.size.height);
         [poc presentPopoverFromBarButtonItem:sender permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
     } else {
         [self.navigationController pushViewController:tzvc animated:YES];

@@ -14,6 +14,7 @@ NSInteger static selectedRow = -1;
 
 @interface TimeZonesViewController () <UITableViewDataSource, UITableViewDelegate> {
     NSArray *timeZonesData;
+    NSTimeZone *selectedTimeZone;
 }
 
 @end
@@ -40,6 +41,10 @@ NSInteger static selectedRow = -1;
                         scrollPosition:UITableViewScrollPositionMiddle];
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [self.delegate setTheTimeZone:selectedTimeZone];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [timeZonesData count];
 }
@@ -60,8 +65,7 @@ NSInteger static selectedRow = -1;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     selectedRow = indexPath.row;
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    NSTimeZone *timeZone = [NSTimeZone timeZoneWithName:cell.textLabel.text];
-    [self.delegate setTheTimeZone:timeZone];
+    selectedTimeZone = [NSTimeZone timeZoneWithName:cell.textLabel.text];
 }
 
 - (void)dealloc {
