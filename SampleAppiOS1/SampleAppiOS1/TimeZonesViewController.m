@@ -54,7 +54,7 @@ NSInteger static selectedRow = -1;
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
         UIView *bgColorView = [[UIView alloc] init];
-        bgColorView.backgroundColor = UIColorFromRGB(0x87cefa);
+        bgColorView.backgroundColor = UIColorFromRGB(0x87cefD);
         [cell setSelectedBackgroundView:bgColorView];
     }
     
