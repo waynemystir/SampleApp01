@@ -53,11 +53,11 @@ NSInteger static selectedRow = -1;
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
+        UIView *bgColorView = [[UIView alloc] init];
+        bgColorView.backgroundColor = UIColorFromRGB(0x87cefa);
+        [cell setSelectedBackgroundView:bgColorView];
     }
     
-    UIView *bgColorView = [[UIView alloc] init];
-    bgColorView.backgroundColor = UIColorFromRGB(0x87cefa);
-    [cell setSelectedBackgroundView:bgColorView];
     cell.textLabel.text = timeZonesData[indexPath.row];    
     return cell;
 }

@@ -55,9 +55,12 @@
 }
 
 - (void)setTheTimeZone:(NSTimeZone *)timezone {
-    theTimeZone = timezone;
+    if (timezone) {
+        theTimeZone = timezone;
+        _timeZoneLabel.text = timezone.name;
+    }
+    
     [self updateTimerLabel];
-    _timeZoneLabel.text = timezone.name;
 }
 
 - (void)showTimeZones:(id)sender {
